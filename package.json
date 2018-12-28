@@ -4,13 +4,18 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest __tests__/unit/*",
+    "lint": "eslint */*.js",
+    "integration": "jest __tests__/integration/*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "serverless-offline": "^3.31.3"
+    "eslint": "^5.11.1",
+    "jest": "^23.6.0",
+    "serverless-offline": "^3.31.3",
+    "supertest": "^3.3.0"
   },
   "dependencies": {
     "aws-sdk": "^2.382.0",
