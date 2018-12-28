@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - npm install
-      - npm install -g serverless
+      - npm install -g serverless eslint jest
   build:
     commands:
       - npm run-script lint
